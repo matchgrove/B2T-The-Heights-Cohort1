@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<p id = "this"></p>
+
+	<script type="text/javascript">
+		// creating array
+		var fruits = ["apple", "orange", "kewi"];
+		
+	
+		// asks user for input adds it to created variable called input
+		var input = prompt("add more fruit")
+
+		//adds user input to end of array
+		fruits.push(input)
+
+		//removes first element in array
+		fruits.shift()
+
+		//sorts elements in array
+		fruits.sort()
+
+		// displays elements seperated space with space in an html element
+		document.getElementById("this") .innerHTML = (fruits.join(" with "));
+
+
+
+	</script>
+
+	
+</body>
+</html>
