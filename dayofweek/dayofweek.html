@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<p id = "this"></p>
+
+<script type="text/javascript">
+	
+	// this creates the variable date which gets the actual date in numeric values
+	var date = new Date ();
+	// this gets the variable date and makes it into just a 0-6 for the day of week by .getDay, its also uses switch to go through the different days to take the input and add create strings of text. 
+	switch(date.getDay()){
+		case 0: 
+			// this prints the element to the webpage if its the correct case if not it goes on to the next case
+			document.getElementById("this").innerHTML = "Its Sunday";
+			break;
+		case 1:
+			document.getElementById("this").innerHTML = "Its Monday";
+			break;
+		case 2: 
+			document.getElementById("this").innerHTML = "Its Tuesday";
+			break;
+		case 3: 
+			document.getElementById("this").innerHTML = "Its Wednesday";
+			break;
+		case 4: document.getElementById("this").innerHTML = "Its Thursday";
+			break;
+		case 5: document.getElementById("this").innerHTML = "Its Friday";
+			break;
+		case 6: document.getElementById("this").innerHTML = "Its Saturday";
+			break;
+	}
+	
+
+
+
+</script>
+
+</body>
+</html>
