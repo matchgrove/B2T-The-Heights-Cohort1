@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	grade = [80, 77, 88, 95, 68];
+		// this is code i found from stackoverflow to find the average, it creates sum by taking the grade array and turning into individual elements then adding them together; i think
+		var sum = grade.reduce(function(a, b) { return a + b; });
+		// this divids the sum by the number of elements in the grade array
+		var avg = sum / grade.length;
+
+		// this is greater and 90 and less than 100 makes an A
+	if (avg > 90 && avg < 100) {response = "Your grade is A";
+}
+		// this is greater and 80 and less than 90 makes an B
+	else if (avg > 80 && avg < 90) { response = "Your grade is B";
+} 
+	// this is greater and 70 and less than 80 makes an C
+	else if (avg > 70 && avg < 80) { response = "Your grade is C";
+
+}	// this is greater and 60 and less than 70 makes an D
+	else if (avg > 60 && avg < 70) { response = "Your grade is D";
+
+}	// this is greater and 0 and less than 60 makes a F
+	else if (avg > 0 && avg < 60) { response = "Your grade is F";
+
+} 	// prints the response
+	console.log(response)
+
+</script>
+
+</body>
+</html>
