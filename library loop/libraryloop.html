@@ -7,9 +7,12 @@
 <script type="text/javascript">
 	// creates objects inside an array, the objects contains details about a book -- author, title, and reading status
 var library = [
- 	{author: "Bill Gates", title: "The Road Ahead", readingStatus: true};
- 	{author: "Steve Jobs", title: "Walter Isaacson", readingStatus: true};
- 	{author: "Suzanne Collins", title: "The Hunger Games", readingStatus:false};
+
+ 	{ author: "Bill Gates", title: "The Road Ahead", readingStatus: true },
+
+ 	{ author: "Steve Jobs", title: "Walter Isaacson", readingStatus: true },
+
+ 	{ author: "Suzanne Collins", title: "The Hunger Games", readingStatus:false },
  	]
  	// this is a for loop to loop through the entirely of the library variable 
  	for(var i = 0; i < library.length; i++){
@@ -20,7 +23,8 @@ var library = [
  		console.log("You still need to read " +  library[i].title + " by " + library[i].author)
  	}
 
- }
+ 
+ 
 
 </script>
 
