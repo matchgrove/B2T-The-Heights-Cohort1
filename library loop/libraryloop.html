@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	// creates objects inside an array, the objects contains details about a book -- author, title, and reading status
+var library = [
+ 	{author: "Bill Gates", title: "The Road Ahead", readingStatus: true};
+ 	{author: "Steve Jobs", title: "Walter Isaacson", readingStatus: true};
+ 	{author: "Suzanne Collins", title: "The Hunger Games", readingStatus:false};
+ 	]
+ 	// this is a for loop to loop through the entirely of the library variable 
+ 	for(var i = 0; i < library.length; i++){
+ 	// if / else statement, this prints a string sentence for if the book has been read or has not been read accoring to reading status 
+ 	if(library[i].readingStatus == true)
+ 	console.log("Already read " +  library[i].title + " by " + library[i].author)
+ 	else
+ 		console.log("You still need to read " +  library[i].title + " by " + library[i].author)
+ 	}
+
+ }
+
+</script>
+
+</body>
+</html>
