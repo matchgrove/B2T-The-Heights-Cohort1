@@ -23,7 +23,12 @@ var library = [
  		console.log("You still need to read " +  library[i].title + " by " + library[i].author)
  	}
 
- 
+  function addPlanet(){
+  		var ran = parseInt(Math.random()*planets.length);
+  		document.getElementById("display").innerHTML += 
+  			planets[ran] + " , ";
+
+  }
  
 
 </script>

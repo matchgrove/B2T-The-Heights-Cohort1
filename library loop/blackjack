@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		var deck = ['A', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K']
+		var ran = parseInt(Math.random()*deck.length);
+		console.log(deck[ran]);
+
+
+
+
+
+
+	</script>
+
+</body>
+</html>
